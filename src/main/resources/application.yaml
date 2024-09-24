@@ -1,0 +1,15 @@
+hateoas:
+  url:
+    base: http://localhost:4919/api/posts/
+logging:
+  level:
+    org.zalando.logbook: trace
+    org:
+      springframework:
+        web:
+          client:
+            RestTemplate: trace
+logbook:
+  exclude:
+    -/api/posts/comments
+    -/api/upload
